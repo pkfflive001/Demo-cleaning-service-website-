@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EliteClean USA | Luxury Cleaning Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:fixed;
+width:100%;
+top:0;
+background:rgba(10,15,25,0.7);
+backdrop-filter:blur(15px);
+z-index:1000;
+}
+
+nav h1{
+color:#00e5ff;
+font-weight:800;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-size:14px;
+opacity:0.8;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 10%;
+background:radial-gradient(circle at top,#1a2a6c,#0b0f1a);
+}
+
+.hero h2{
+font-size:60px;
+font-weight:800;
+line-height:1.1;
+}
+
+.hero span{
+color:#00e5ff;
+}
+
+.hero p{
+margin-top:20px;
+opacity:0.8;
+}
+
+.btn{
+margin-top:30px;
+display:inline-block;
+padding:15px 35px;
+background:#00e5ff;
+color:black;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SERVICES */
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.section h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#00e5ff;
+}
+
+/* BEFORE AFTER */
+.ba img{
+width:100%;
+border-radius:15px;
+}
+
+/* PRICING */
+.price{
+border:1px solid rgba(0,229,255,0.3);
+}
+
+.price h3{
+color:#00e5ff;
+font-size:22px;
+}
+
+.price h1{
+font-size:40px;
+margin:10px 0;
+}
+
+/* BOOKING */
+input,select,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:10px;
+border:none;
+outline:none;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 20px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>EliteClean</h1>
+<div>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h2>Luxury <span>Cleaning Services</span><br>For Modern Homes</h2>
+<p>USA Premium Standard • Trusted • Professional • Fast Booking</p>
+<a href="#pricing" class="btn">Get Free Quote</a>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+<h2>Our Premium Services</h2>
+
+<div class="grid">
+<div class="card">🏠 Home Cleaning</div>
+<div class="card">🏢 Office Cleaning</div>
+<div class="card">🧼 Deep Cleaning</div>
+<div class="card">🚚 Move In/Out</div>
+<div class="card">🪟 Window Cleaning</div>
+<div class="card">🧽 Carpet Cleaning</div>
+</div>
+</section>
+
+<!-- BEFORE AFTER -->
+<section class="section">
+<h2>Before & After Results</h2>
+
+<div class="grid ba">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<p>Before Cleaning</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581579185169-65d3b7f4c9c1">
+<p>After Cleaning</p>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+<h2>Pricing Plans</h2>
+
+<div class="grid">
+
+<div class="card price">
+<h3>Basic</h3>
+<h1>$149</h1>
+<p>Standard Home Cleaning</p>
+</div>
+
+<div class="card price">
+<h3>Premium</h3>
+<h1>$299</h1>
+<p>Deep Cleaning + Kitchen + Bathroom</p>
+</div>
+
+<div class="card price">
+<h3>Elite VIP</h3>
+<h1>$499</h1>
+<p>Full Luxury House Detailing</p>
+</div>
+
+</div>
+</section>
+
+<!-- BOOKING -->
+<section class="section" id="contact">
+<h2>Book Appointment</h2>
+
+<div class="card">
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+<input type="tel" placeholder="Phone">
+
+<select>
+<option>Select Service</option>
+<option>Home Cleaning</option>
+<option>Deep Cleaning</option>
+<option>Office Cleaning</option>
+</select>
+
+<textarea placeholder="Message"></textarea>
+
+<a class="btn" href="#">Submit Request</a>
+</div>
+</section>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/1234567890">
+💬 Chat on WhatsApp
+</a>
+
+</body>
+</html>
