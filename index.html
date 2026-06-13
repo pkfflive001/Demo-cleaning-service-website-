@@ -2,279 +2,186 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EliteClean USA | Luxury Cleaning Services</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<title>Cleaning Service Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
-}
+body{font-family:Arial;margin:0;background:#f4f6f8;}
 
-body{
-background:#0b0f1a;
+header{
+background:#0d6efd;
 color:white;
-overflow-x:hidden;
-}
-
-/* NAVBAR */
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-position:fixed;
-width:100%;
-top:0;
-background:rgba(10,15,25,0.7);
-backdrop-filter:blur(15px);
-z-index:1000;
-}
-
-nav h1{
-color:#00e5ff;
-font-weight:800;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-size:14px;
-opacity:0.8;
-}
-
-nav a:hover{
-color:#00e5ff;
-}
-
-/* HERO */
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:0 10%;
-background:radial-gradient(circle at top,#1a2a6c,#0b0f1a);
-}
-
-.hero h2{
-font-size:60px;
-font-weight:800;
-line-height:1.1;
-}
-
-.hero span{
-color:#00e5ff;
-}
-
-.hero p{
-margin-top:20px;
-opacity:0.8;
-}
-
-.btn{
-margin-top:30px;
-display:inline-block;
-padding:15px 35px;
-background:#00e5ff;
-color:black;
-border-radius:50px;
-font-weight:600;
-text-decoration:none;
-transition:0.3s;
-}
-
-.btn:hover{
-transform:scale(1.05);
-}
-
-/* SERVICES */
-.section{
-padding:100px 10%;
+padding:20px;
 text-align:center;
 }
 
-.section h2{
-font-size:40px;
-margin-bottom:50px;
+section{
+padding:60px 10%;
+text-align:center;
 }
 
-.grid{
+h2{font-size:35px;margin-bottom:30px;}
+
+.cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:20px;
 }
 
 .card{
-background:rgba(255,255,255,0.05);
-padding:30px;
-border-radius:20px;
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.1);
-transition:0.3s;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-.card:hover{
-transform:translateY(-10px);
-border-color:#00e5ff;
-}
-
-/* BEFORE AFTER */
-.ba img{
-width:100%;
-border-radius:15px;
-}
-
-/* PRICING */
-.price{
-border:1px solid rgba(0,229,255,0.3);
-}
-
-.price h3{
-color:#00e5ff;
-font-size:22px;
-}
-
-.price h1{
-font-size:40px;
-margin:10px 0;
-}
-
-/* BOOKING */
 input,select,textarea{
 width:100%;
 padding:12px;
 margin:10px 0;
-border-radius:10px;
-border:none;
-outline:none;
+border:1px solid #ccc;
+border-radius:6px;
 }
 
-/* WHATSAPP */
+button{
+background:#0d6efd;
+color:white;
+padding:12px;
+border:none;
+width:100%;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* WhatsApp */
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-padding:15px 20px;
-border-radius:50px;
 color:white;
+padding:15px 18px;
+border-radius:50px;
 text-decoration:none;
-font-weight:600;
+font-weight:bold;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* BEFORE AFTER */
+.before-after img{
+width:100%;
+border-radius:10px;
+}
+.plan{
+border:2px solid #0d6efd;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-<h1>EliteClean</h1>
-<div>
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#pricing">Pricing</a>
-<a href="#contact">Contact</a>
+<header>
+<h1>Cleaning Service Pro</h1>
+<p>Professional Home & Office Cleaning</p>
+</header>
+
+<!-- PRICING PLANS -->
+<section>
+<h2>💰 Cleaning Plans</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Basic Plan</h3>
+<h1>$99</h1>
+<p>House Cleaning</p>
+<p>1 Bedroom + Kitchen</p>
+<button>Select Plan</button>
 </div>
-</nav>
 
-<!-- HERO -->
-<section class="hero">
-<div>
-<h2>Luxury <span>Cleaning Services</span><br>For Modern Homes</h2>
-<p>USA Premium Standard • Trusted • Professional • Fast Booking</p>
-<a href="#pricing" class="btn">Get Free Quote</a>
+<div class="card plan">
+<h3>Premium Plan ⭐</h3>
+<h1>$199</h1>
+<p>Deep Cleaning</p>
+<p>Full House + Bathroom</p>
+<button>Select Plan</button>
 </div>
-</section>
 
-<!-- SERVICES -->
-<section class="section" id="services">
-<h2>Our Premium Services</h2>
+<div class="card">
+<h3>Ultimate Plan</h3>
+<h1>$299</h1>
+<p>Move Out Cleaning</p>
+<p>Full House + Carpet</p>
+<button>Select Plan</button>
+</div>
 
-<div class="grid">
-<div class="card">🏠 Home Cleaning</div>
-<div class="card">🏢 Office Cleaning</div>
-<div class="card">🧼 Deep Cleaning</div>
-<div class="card">🚚 Move In/Out</div>
-<div class="card">🪟 Window Cleaning</div>
-<div class="card">🧽 Carpet Cleaning</div>
 </div>
 </section>
 
 <!-- BEFORE AFTER -->
-<section class="section">
-<h2>Before & After Results</h2>
+<section style="background:#fff;">
+<h2>📸 Before & After Cleaning</h2>
 
-<div class="grid ba">
+<div class="cards before-after">
+
 <div class="card">
-<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
-<p>Before Cleaning</p>
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="before">
+<p><b>Before Cleaning</b></p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1581579185169-65d3b7f4c9c1">
-<p>After Cleaning</p>
+<img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf" alt="after">
+<p><b>After Cleaning</b></p>
 </div>
+
 </div>
 </section>
 
-<!-- PRICING -->
-<section class="section" id="pricing">
-<h2>Pricing Plans</h2>
-
-<div class="grid">
-
-<div class="card price">
-<h3>Basic</h3>
-<h1>$149</h1>
-<p>Standard Home Cleaning</p>
-</div>
-
-<div class="card price">
-<h3>Premium</h3>
-<h1>$299</h1>
-<p>Deep Cleaning + Kitchen + Bathroom</p>
-</div>
-
-<div class="card price">
-<h3>Elite VIP</h3>
-<h1>$499</h1>
-<p>Full Luxury House Detailing</p>
-</div>
-
+<!-- REVIEWS -->
+<section>
+<h2>⭐ Customer Reviews</h2>
+<div class="cards">
+<div class="card">⭐⭐⭐⭐⭐ Sarah: Amazing service!</div>
+<div class="card">⭐⭐⭐⭐⭐ John: Very professional!</div>
+<div class="card">⭐⭐⭐⭐⭐ Emma: Highly recommended!</div>
 </div>
 </section>
 
 <!-- BOOKING -->
-<section class="section" id="contact">
-<h2>Book Appointment</h2>
+<section style="background:#fff;">
+<h2>📅 Book Service</h2>
 
-<div class="card">
+<form class="card">
 <input type="text" placeholder="Full Name">
 <input type="email" placeholder="Email">
 <input type="tel" placeholder="Phone">
 
 <select>
-<option>Select Service</option>
-<option>Home Cleaning</option>
+<option>House Cleaning</option>
 <option>Deep Cleaning</option>
 <option>Office Cleaning</option>
+<option>Move Out Cleaning</option>
 </select>
 
 <textarea placeholder="Message"></textarea>
 
-<a class="btn" href="#">Submit Request</a>
+<button type="submit">Book Now</button>
+</form>
+</section>
+
+<!-- GOOGLE REVIEWS -->
+<section>
+<h2>🏆 Google Reviews</h2>
+<div class="cards">
+<div class="card">⭐ 4.9 Rating - Trusted Service</div>
+<div class="card">⭐ 5.0 Rating - Best Cleaners</div>
+<div class="card">⭐ 4.8 Rating - Professional Team</div>
 </div>
 </section>
 
 <!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/1234567890">
-💬 Chat on WhatsApp
+<a class="whatsapp" href="https://wa.me/1234567890" target="_blank">
+💬 WhatsApp Chat
 </a>
 
 </body>
